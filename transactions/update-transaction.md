@@ -1,19 +1,25 @@
+---
+description: >-
+  Use this endpoint to update a single transaction. You may also use this to
+  split an existing transaction.
+---
+
 # Update transaction
 
-{% api-method method="put" host="https://api.cakes.com" path="/v1/transactions/:transaction\_id" %}
+{% api-method method="put" host="https://dev.lunchmoney.app" path="/v1/transactions/:transaction\_id" %}
 {% api-method-summary %}
 Update transaction
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Bulk-insert transactions
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="transaction" type="array" required=true %}
-Updates to transaction matching ID \(see Update Transaction object\)
+Updates to transaction matching ID \(see Update Transaction object below\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="debit\_as\_negative" type="boolean" required=false %}
@@ -105,22 +111,18 @@ Array of errors will be returned if field\(s\) are invalid.
       <td style="text-align:left"><b>currency</b>
       </td>
       <td style="text-align:center">string</td>
-      <td style="text-align:left">
-        <p>You may only update this if this transaction was not created from an automatic
-          import, i.e. if this transaction is not associated with a plaid_account_id</p>
-        <p>Defaults to user account&apos;s primary currency</p>
-      </td>
+      <td style="text-align:left">You may only update this if this transaction was not created from an automatic
+        import, i.e. if this transaction is not associated with a plaid_account_id.
+        Defaults to user account&apos;s primary currency.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>asset_id</b>
       </td>
       <td style="text-align:center">number</td>
-      <td style="text-align:left">
-        <p>Unique identifier for associated asset (manually-managed account). Asset
-          must be associated with the same account.</p>
-        <p>You may only update this if this transaction was not created from an automatic
-          import, i.e. if this transaction is not associated with a plaid_account_id</p>
-      </td>
+      <td style="text-align:left">Unique identifier for associated asset (manually-managed account). Asset
+        must be associated with the same account. You may only update this if this
+        transaction was not created from an automatic import, i.e. if this transaction
+        is not associated with a plaid_account_id</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>recurring_id</b>
@@ -139,24 +141,19 @@ Array of errors will be returned if field\(s\) are invalid.
       <td style="text-align:left"><b>status</b>
       </td>
       <td style="text-align:center">string</td>
-      <td style="text-align:left">
-        <p>Must be either <code>cleared</code> or <code>uncleared</code>. Defaults to <code>uncleared</code>
-          <br
-          />If recurring_id is provided, the status will automatically be set to <code>recurring</code> or <code>recurring_suggested</code> depending
-          on the type of recurring_id</p>
-        <p>Defaults to uncleared.</p>
-      </td>
+      <td style="text-align:left">Must be either <code>cleared</code> or <code>uncleared</code>. Defaults to <code>uncleared</code>
+        <br
+        />If recurring_id is provided, the status will automatically be set to <code>recurring</code> or <code>recurring_suggested</code> depending
+        on the type of recurring_id. Defaults to <code>uncleared</code>.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>external_id</b>
       </td>
       <td style="text-align:center">string</td>
-      <td style="text-align:left">
-        <p>User-defined external ID for transaction. Max 75 characters. External
-          IDs must be unique within the same asset_id.</p>
-        <p>You may only update this if this transaction was not created from an automatic
-          import, i.e. if this transaction is not associated with a plaid_account_id</p>
-      </td>
+      <td style="text-align:left">User-defined external ID for transaction. Max 75 characters. External
+        IDs must be unique within the same asset_id. You may only update this if
+        this transaction was not created from an automatic import, i.e. if this
+        transaction is not associated with a plaid_account_id</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>split</b>
@@ -213,9 +210,8 @@ Array of errors will be returned if field\(s\) are invalid.
       </td>
       <td style="text-align:center">number | string</td>
       <td style="text-align:left">
-        <p>Individual amount of split.</p>
-        <p>Note: all amounts must sum up to parent transaction amount.</p>
-        <p>Note: currency will inherit from parent transaction.</p>
+        <p>Individual amount of split. Currency will inherit from parent transaction.
+          All amounts must sum up to parent transaction amount.</p>
         <p><em>Required.</em>
         </p>
       </td>
