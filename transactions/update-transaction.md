@@ -64,19 +64,19 @@ Array of errors will be returned if field\(s\) are invalid.
 {% tab title="Update Transaction object" %}
 ### Update Transaction object
 
-| Key | Type | Description |
-| :--- | :---: | :--- |
-| **date** | string | Must be in ISO 8601 format \(YYYY-MM-DD\). |
-| **category\_id** | number | Unique identifier for associated category\_id. Category must be associated with the same account and must not be a category group. |
-| **payee** | string | Max 140 characters |
-| **amount** | number \| string | You may only update this if this transaction was not created from an automatic import, i.e. if this transaction is not associated with a plaid\_account\_id |
-| **currency** | string | You may only update this if this transaction was not created from an automatic import, i.e. if this transaction is not associated with a plaid\_account\_id. Defaults to user account's primary currency. |
-| **asset\_id** | number | Unique identifier for associated asset \(manually-managed account\). Asset must be associated with the same account. You may only update this if this transaction was not created from an automatic import, i.e. if this transaction is not associated with a plaid\_account\_id |
-| **recurring\_id** | number | Unique identifier for associated recurring expense. Recurring expense must be associated with the same account. |
-| **notes** | string | Max 350 characters |
-| **status** | string | Must be either `cleared` or `uncleared`. Defaults to `uncleared` If recurring\_id is provided, the status will automatically be set to `recurring` or `recurring_suggested` depending on the type of recurring\_id. Defaults to `uncleared`. |
-| **external\_id** | string | User-defined external ID for transaction. Max 75 characters. External IDs must be unique within the same asset\_id. You may only update this if this transaction was not created from an automatic import, i.e. if this transaction is not associated with a plaid\_account\_id |
-| **split** | array of Split objects | Defines the split of a transaction. You may not split an already-split transaction, recurring transaction, or group transaction. |
+| Key |  | Type |  | Description |
+| :--- | :--- | :---: | :--- | :--- |
+| **date** |  | string |  | Must be in ISO 8601 format \(YYYY-MM-DD\). |
+| **category\_id** |  | number |  | Unique identifier for associated category\_id. Category must be associated with the same account and must not be a category group. |
+| **payee** |  | string |  | Max 140 characters |
+| **amount** |  | number \| string |  | You may only update this if this transaction was not created from an automatic import, i.e. if this transaction is not associated with a plaid\_account\_id |
+| **currency** |  | string |  | You may only update this if this transaction was not created from an automatic import, i.e. if this transaction is not associated with a plaid\_account\_id. Defaults to user account's primary currency. |
+| **asset\_id** |  | number |  | Unique identifier for associated asset \(manually-managed account\). Asset must be associated with the same account. You may only update this if this transaction was not created from an automatic import, i.e. if this transaction is not associated with a plaid\_account\_id |
+| **recurring\_id** |  | number |  | Unique identifier for associated recurring expense. Recurring expense must be associated with the same account. |
+| **notes** |  | string |  | Max 350 characters |
+| **status** |  | string |  | Must be either `cleared` or `uncleared`. Defaults to `uncleared` If recurring\_id is provided, the status will automatically be set to `recurring` or `recurring_suggested` depending on the type of recurring\_id. Defaults to `uncleared`. |
+| **external\_id** |  | string |  | User-defined external ID for transaction. Max 75 characters. External IDs must be unique within the same asset\_id. You may only update this if this transaction was not created from an automatic import, i.e. if this transaction is not associated with a plaid\_account\_id |
+| **split** |  | array of Split objects |  | Defines the split of a transaction. You may not split an already-split transaction, recurring transaction, or group transaction. |
 {% endtab %}
 
 {% tab title="Split object" %}
@@ -86,7 +86,9 @@ Array of errors will be returned if field\(s\) are invalid.
   <thead>
     <tr>
       <th style="text-align:left">Key</th>
+      <th style="text-align:left"></th>
       <th style="text-align:center">Type</th>
+      <th style="text-align:left"></th>
       <th style="text-align:left">Description</th>
     </tr>
   </thead>
@@ -94,7 +96,9 @@ Array of errors will be returned if field\(s\) are invalid.
     <tr>
       <td style="text-align:left"><b>date</b>
       </td>
+      <td style="text-align:left"></td>
       <td style="text-align:center">string</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">
         <p>Must be in ISO 8601 format (YYYY-MM-DD)</p>
         <p><em>Required.</em>
@@ -104,7 +108,9 @@ Array of errors will be returned if field\(s\) are invalid.
     <tr>
       <td style="text-align:left"><b>category_id</b>
       </td>
+      <td style="text-align:left"></td>
       <td style="text-align:center">number</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">
         <p>Unique identifier for associated category_id. Category must be associated
           with the same account.</p>
@@ -115,13 +121,17 @@ Array of errors will be returned if field\(s\) are invalid.
     <tr>
       <td style="text-align:left"><b>notes</b>
       </td>
+      <td style="text-align:left"></td>
       <td style="text-align:center">string</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>amount</b>
       </td>
+      <td style="text-align:left"></td>
       <td style="text-align:center">number | string</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">
         <p>Individual amount of split. Currency will inherit from parent transaction.
           All amounts must sum up to parent transaction amount.</p>
