@@ -1,7 +1,5 @@
 # Transaction Object
 
-## Transaction Object
-
 <table>
   <thead>
     <tr>
