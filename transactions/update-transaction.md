@@ -62,8 +62,7 @@ Array of errors will be returned if field\(s\) are invalid.
   <thead>
     <tr>
       <th style="text-align:left">Key</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left"></th>
+      <th style="text-align:center">Type</th>
       <th style="text-align:left">Description</th>
     </tr>
   </thead>
@@ -71,46 +70,51 @@ Array of errors will be returned if field\(s\) are invalid.
     <tr>
       <td style="text-align:left"><b>date</b>
       </td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">Required</td>
-      <td style="text-align:left">Must be in ISO 8601 format (YYYY-MM-DD)</td>
+      <td style="text-align:center">string</td>
+      <td style="text-align:left">
+        <p>Must be in ISO 8601 format (YYYY-MM-DD).</p>
+        <p><em>Required.</em>
+        </p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category_id</b>
       </td>
-      <td style="text-align:left">number</td>
-      <td style="text-align:left">Optional</td>
+      <td style="text-align:center">number</td>
       <td style="text-align:left">Unique identifier for associated category_id. Category must be associated
         with the same account and must not be a category group.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>payee</b>
       </td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">Optional</td>
+      <td style="text-align:center">string</td>
       <td style="text-align:left">Max 140 characters</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>amount</b>
       </td>
-      <td style="text-align:left">number | string</td>
-      <td style="text-align:left">Required</td>
-      <td style="text-align:left">You may only update this if this transaction was not created from an automatic
-        import, i.e. if this transaction is not associated with a plaid_account_id</td>
+      <td style="text-align:center">number | string</td>
+      <td style="text-align:left">
+        <p>You may only update this if this transaction was not created from an automatic
+          import, i.e. if this transaction is not associated with a plaid_account_id</p>
+        <p><em>Required.</em>
+        </p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>currency</b>
       </td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">Optional, defaults to user account&apos;s primary currency</td>
-      <td style="text-align:left">You may only update this if this transaction was not created from an automatic
-        import, i.e. if this transaction is not associated with a plaid_account_id</td>
+      <td style="text-align:center">string</td>
+      <td style="text-align:left">
+        <p>You may only update this if this transaction was not created from an automatic
+          import, i.e. if this transaction is not associated with a plaid_account_id</p>
+        <p>Defaults to user account&apos;s primary currency</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>asset_id</b>
       </td>
-      <td style="text-align:left">number</td>
-      <td style="text-align:left">Optional</td>
+      <td style="text-align:center">number</td>
       <td style="text-align:left">
         <p>Unique identifier for associated asset (manually-managed account). Asset
           must be associated with the same account.</p>
@@ -121,34 +125,32 @@ Array of errors will be returned if field\(s\) are invalid.
     <tr>
       <td style="text-align:left"><b>recurring_id</b>
       </td>
-      <td style="text-align:left">number</td>
-      <td style="text-align:left">Optional</td>
+      <td style="text-align:center">number</td>
       <td style="text-align:left">Unique identifier for associated recurring expense. Recurring expense
         must be associated with the same account.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>notes</b>
       </td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">Optional</td>
+      <td style="text-align:center">string</td>
       <td style="text-align:left">Max 350 characters</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>status</b>
       </td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">Optional, defaults to <code>uncleared</code>
+      <td style="text-align:center">string</td>
+      <td style="text-align:left">
+        <p>Must be either <code>cleared</code> or <code>uncleared</code>. Defaults to <code>uncleared</code>
+          <br
+          />If recurring_id is provided, the status will automatically be set to <code>recurring</code> or <code>recurring_suggested</code> depending
+          on the type of recurring_id</p>
+        <p>Defaults to uncleared.</p>
       </td>
-      <td style="text-align:left">Must be either <code>cleared</code> or <code>uncleared</code>. Defaults to <code>uncleared</code>
-        <br
-        />If recurring_id is provided, the status will automatically be set to <code>recurring</code> or <code>recurring_suggested</code> depending
-        on the type of recurring_id</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>external_id</b>
       </td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">Optional</td>
+      <td style="text-align:center">string</td>
       <td style="text-align:left">
         <p>User-defined external ID for transaction. Max 75 characters. External
           IDs must be unique within the same asset_id.</p>
@@ -159,8 +161,7 @@ Array of errors will be returned if field\(s\) are invalid.
     <tr>
       <td style="text-align:left"><b>split</b>
       </td>
-      <td style="text-align:left">array of Split objects (see below)</td>
-      <td style="text-align:left">Optional</td>
+      <td style="text-align:center">array of Split objects</td>
       <td style="text-align:left">Defines the split of a transaction. You may not split an already-split
         transaction, recurring transaction, or group transaction.</td>
     </tr>
@@ -175,8 +176,7 @@ Array of errors will be returned if field\(s\) are invalid.
   <thead>
     <tr>
       <th style="text-align:left">Key</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left"></th>
+      <th style="text-align:center">Type</th>
       <th style="text-align:left">Description</th>
     </tr>
   </thead>
@@ -184,34 +184,40 @@ Array of errors will be returned if field\(s\) are invalid.
     <tr>
       <td style="text-align:left"><b>date</b>
       </td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">Required</td>
-      <td style="text-align:left">Must be in ISO 8601 format (YYYY-MM-DD)</td>
+      <td style="text-align:center">string</td>
+      <td style="text-align:left">
+        <p>Must be in ISO 8601 format (YYYY-MM-DD)</p>
+        <p><em>Required.</em>
+        </p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category_id</b>
       </td>
-      <td style="text-align:left">number</td>
-      <td style="text-align:left">Required</td>
-      <td style="text-align:left">Unique identifier for associated category_id. Category must be associated
-        with the same account.</td>
+      <td style="text-align:center">number</td>
+      <td style="text-align:left">
+        <p>Unique identifier for associated category_id. Category must be associated
+          with the same account.</p>
+        <p><em>Required.</em>
+        </p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>notes</b>
       </td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">Optional</td>
+      <td style="text-align:center">string</td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>amount</b>
       </td>
-      <td style="text-align:left">number | string</td>
-      <td style="text-align:left">Required</td>
+      <td style="text-align:center">number | string</td>
       <td style="text-align:left">
         <p>Individual amount of split.</p>
         <p>Note: all amounts must sum up to parent transaction amount.</p>
         <p>Note: currency will inherit from parent transaction.</p>
+        <p><em>Required.</em>
+        </p>
       </td>
     </tr>
   </tbody>
