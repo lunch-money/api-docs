@@ -1,0 +1,85 @@
+# Get all transactions
+
+{% api-method method="get" host="https://dev.lunchmoney.app" path="/v1/transactions" %}
+{% api-method-summary %}
+Get all transactions
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Returns list of Transaction objects
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-query-parameters %}
+{% api-method-parameter name="start\_date" type="string" %}
+Denotes the beginning of the time period to fetch transactions for. Defaults to beginning of current month. Required if end\_date exists.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="end\_date" type="string" %}
+Denotes the end of the time period you'd like to get transactions for. Defaults to end of current month. Required if start\_date exists.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="debit\_as\_negative" type="boolean" %}
+Pass in true if you’d like expenses to be returned as negative amounts and credits as positive amounts. Defaults to false.
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Returns a list of transactions.
+{% endapi-method-response-example-description %}
+
+```text
+{ transactions:
+   [ { id: 602,
+       date: '2020-01-01',
+       payee: 'Starbucks',
+       amount: '4.5000',
+       currency: 'cad',
+       notes: 'Frappuccino',
+       category_id: null,
+       recurring_id: null,
+       asset_id: null,
+       plaid_account_id: null,
+       status: 'cleared',
+       is_group: false,
+       group_id: null,
+       parent_id: null,
+       external_id: null },
+     { id: 603,
+       date: '2020-01-02',
+       payee: 'Walmart',
+       amount: '20.9100',
+       currency: 'usd',
+       notes: null,
+       category_id: null,
+       recurring_id: null,
+       asset_id: 153,
+       plaid_account_id: null,
+       status: 'uncleared',
+       is_group: false,
+       group_id: null,
+       parent_id: null,
+       external_id: 'jf2r3t98o943' } ] }
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+Errors will be returned in parameters are invalid.
+{% endapi-method-response-example-description %}
+
+```text
+{ error: 'Both start_date and end_date must be specified.' }
+{ error: 'Invalid start_date. Must be in format YYYY-MM-DD' }
+{ error: 'Invalid end_date. Must be in format YYYY-MM-DD' }
+{ error: 'end_date cannot be same or before start_date' }
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
