@@ -79,8 +79,7 @@ An array of errors will be returned denoting reason why parameters were deemed i
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><b>date</b>
-      </td>
+      <td style="text-align:left">date</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
@@ -91,8 +90,7 @@ An array of errors will be returned denoting reason why parameters were deemed i
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>amount</b>
-      </td>
+      <td style="text-align:left">amount</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">number | string</td>
       <td style="text-align:left"></td>
@@ -103,8 +101,7 @@ An array of errors will be returned denoting reason why parameters were deemed i
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>category_id</b>
-      </td>
+      <td style="text-align:left">category_id</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">number</td>
       <td style="text-align:left"></td>
@@ -112,16 +109,14 @@ An array of errors will be returned denoting reason why parameters were deemed i
         with the same account and must not be a category group.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>payee</b>
-      </td>
+      <td style="text-align:left">payee</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Max 140 characters</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>currency</b>
-      </td>
+      <td style="text-align:left">currency</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
@@ -129,8 +124,7 @@ An array of errors will be returned denoting reason why parameters were deemed i
         to user account&apos;s primary currency.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>asset_id</b>
-      </td>
+      <td style="text-align:left">asset_id</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">number</td>
       <td style="text-align:left"></td>
@@ -138,8 +132,7 @@ An array of errors will be returned denoting reason why parameters were deemed i
         must be associated with the same account.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>recurring_id</b>
-      </td>
+      <td style="text-align:left">recurring_id</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">number</td>
       <td style="text-align:left"></td>
@@ -147,16 +140,14 @@ An array of errors will be returned denoting reason why parameters were deemed i
         must be associated with the same account.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>notes</b>
-      </td>
+      <td style="text-align:left">notes</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Max 350 characters</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>status</b>
-      </td>
+      <td style="text-align:left">status</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
@@ -168,8 +159,7 @@ An array of errors will be returned denoting reason why parameters were deemed i
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>external_id</b>
-      </td>
+      <td style="text-align:left">external_id</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
