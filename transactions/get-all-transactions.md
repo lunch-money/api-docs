@@ -1,3 +1,7 @@
+---
+description: Use this endpoint to retrieve all transactions between a date range.
+---
+
 # Get all transactions
 
 {% api-method method="get" host="https://dev.lunchmoney.app" path="/v1/transactions" %}

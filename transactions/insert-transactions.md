@@ -71,6 +71,7 @@ An array of errors will be returned denoting reason why parameters were deemed i
   <thead>
     <tr>
       <th style="text-align:left">Key</th>
+      <th style="text-align:left"></th>
       <th style="text-align:left">Type</th>
       <th style="text-align:left"></th>
       <th style="text-align:left">Description</th>
@@ -79,6 +80,7 @@ An array of errors will be returned denoting reason why parameters were deemed i
   <tbody>
     <tr>
       <td style="text-align:left">date</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">
@@ -89,6 +91,7 @@ An array of errors will be returned denoting reason why parameters were deemed i
     </tr>
     <tr>
       <td style="text-align:left">amount</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">number | string</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">
@@ -99,6 +102,7 @@ An array of errors will be returned denoting reason why parameters were deemed i
     </tr>
     <tr>
       <td style="text-align:left">category_id</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">number</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Unique identifier for associated category_id. Category must be associated
@@ -106,12 +110,14 @@ An array of errors will be returned denoting reason why parameters were deemed i
     </tr>
     <tr>
       <td style="text-align:left">payee</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Max 140 characters</td>
     </tr>
     <tr>
       <td style="text-align:left">currency</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Three-letter lowercase currency code must exist in our database. Defaults
@@ -119,6 +125,7 @@ An array of errors will be returned denoting reason why parameters were deemed i
     </tr>
     <tr>
       <td style="text-align:left">asset_id</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">number</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Unique identifier for associated asset (manually-managed account). Asset
@@ -126,6 +133,7 @@ An array of errors will be returned denoting reason why parameters were deemed i
     </tr>
     <tr>
       <td style="text-align:left">recurring_id</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">number</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Unique identifier for associated recurring expense. Recurring expense
@@ -133,12 +141,14 @@ An array of errors will be returned denoting reason why parameters were deemed i
     </tr>
     <tr>
       <td style="text-align:left">notes</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Max 350 characters</td>
     </tr>
     <tr>
       <td style="text-align:left">status</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">
@@ -150,6 +160,7 @@ An array of errors will be returned denoting reason why parameters were deemed i
     </tr>
     <tr>
       <td style="text-align:left">external_id</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">User-defined external ID for transaction. Max 75 characters. External
