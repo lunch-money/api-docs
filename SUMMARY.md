@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Get started](README.md)
-* [FAQ](faq-1.md)
+* [FAQ](faq.md)
 
 ## Transactions
 
