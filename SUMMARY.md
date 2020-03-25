@@ -2,8 +2,7 @@
 
 * [Initial page](README.md)
 
-## Transactions
+## Endpoints
 
-* [Transaction Object](transactions/transaction-object.md)
-* [Endpoints](transactions/endpoints.md)
+* [Transactions](endpoints/endpoints.md)
 
