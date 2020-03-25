@@ -1,3 +1,7 @@
+---
+description: Use this endpoint to insert many transactions at once.
+---
+
 # Insert transactions
 
 {% api-method method="post" host="https://dev.lunchmoney.app" path="/v1/transactions" %}
@@ -63,18 +67,94 @@ An array of errors will be returned denoting reason why parameters were deemed i
 
 ### Insert Transaction object
 
-| Key | Type |  | Description |
-| :--- | :--- | :--- | :--- |
-| date | string | Required | Must be in ISO 8601 format \(YYYY-MM-DD\) |
-| category\_id | number | Optional | Unique identifier for associated category\_id. Category must be associated with the same account and must not be a category group. |
-| payee | string | Optional | Max 140 characters |
-| amount | number \| string | Required | Numeric value of amount. i.e. $4.25 should be denoted as 4.25 |
-| currency | string | Optional, defaults to user account's primary currency | Three-letter lowercase currency code must exist in our database |
-| asset\_id | number | Optional | Unique identifier for associated asset \(manually-managed account\). Asset must be associated with the same account. |
-| recurring\_id | number | Optional | Unique identifier for associated recurring expense. Recurring expense must be associated with the same account. |
-| notes | string | Optional | Max 350 characters |
-| status | string | Optional, defaults to `uncleared` | Must be either `cleared` or `uncleared`. Defaults to `uncleared` If recurring\_id is provided, the status will automatically be set to `recurring` or `recurring_suggested` depending on the type of recurring\_id |
-| external\_id | string | Optional | User-defined external ID for transaction. Max 75 characters. External IDs must be unique within the same asset\_id. |
-
-## 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Key</th>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left"></th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">date</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p>Must be in ISO 8601 format (YYYY-MM-DD).</p>
+        <p><em>Required.</em>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">amount</td>
+      <td style="text-align:left">number | string</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p>Numeric value of amount. i.e. $4.25 should be denoted as 4.25.</p>
+        <p><em>Required.</em>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">category_id</td>
+      <td style="text-align:left">number</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Unique identifier for associated category_id. Category must be associated
+        with the same account and must not be a category group.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">payee</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Max 140 characters</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">currency</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Three-letter lowercase currency code must exist in our database. Defaults
+        to user account&apos;s primary currency.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">asset_id</td>
+      <td style="text-align:left">number</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Unique identifier for associated asset (manually-managed account). Asset
+        must be associated with the same account.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">recurring_id</td>
+      <td style="text-align:left">number</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Unique identifier for associated recurring expense. Recurring expense
+        must be associated with the same account.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">notes</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Max 350 characters</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">status</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p>Must be either <code>cleared</code> or <code>uncleared</code>. If recurring_id
+          is provided, the status will automatically be set to <code>recurring</code> or <code>recurring_suggested</code> depending
+          on the type of recurring_id.</p>
+        <p>Defaults to <code>uncleared</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">external_id</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">User-defined external ID for transaction. Max 75 characters. External
+        IDs must be unique within the same asset_id.</td>
+    </tr>
+  </tbody>
+</table>## 
 
