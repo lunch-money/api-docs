@@ -54,6 +54,8 @@ Array of errors will be returned if field\(s\) are invalid.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% tabs %}
+{% tab title="Update Transaction object" %}
 ### Update Transaction object
 
 <table>
@@ -163,9 +165,11 @@ Array of errors will be returned if field\(s\) are invalid.
         transaction, recurring transaction, or group transaction.</td>
     </tr>
   </tbody>
-</table>### Split object
+</table>
+{% endtab %}
 
-TODO: Check required/optional
+{% tab title="Split object" %}
+### Split object
 
 <table>
   <thead>
@@ -212,3 +216,6 @@ TODO: Check required/optional
     </tr>
   </tbody>
 </table>
+{% endtab %}
+{% endtabs %}
+
