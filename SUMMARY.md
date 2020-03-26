@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Getting Started](README.md)
+* [Example Projects](example-projects.md)
 * [FAQ](faq.md)
 
 ## Transactions
