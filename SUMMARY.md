@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Get started](README.md)
+* [Getting Started](README.md)
 * [FAQ](faq.md)
 
 ## Transactions

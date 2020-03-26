@@ -5,7 +5,7 @@ description: >-
   experience.
 ---
 
-# Get started
+# Getting Started
 
 ## Current Status
 
@@ -17,11 +17,11 @@ We welcome feedback via email \(support@lunchmoney.app\). These docs are also on
 
 ### Get an access token
 
-Get your access token by going to this page: [https://my.lunchmoney.app/developers](https://my.lunchmoney.app/developers)
+Get your access token by going to this page: [**https://my.lunchmoney.app/developers**](https://my.lunchmoney.app/developers)\*\*\*\*
 
 ### **Connect to the server**
 
-You’ll be connecting to the URL [https://dev.lunchmoney.app](https://dev.lunchmoney.app). There are two ways to make a request:
+You’ll be connecting to the URL **https://dev.lunchmoney.app**. There are two ways to make a request:
 
 |  |  |
 | :--- | :--- |
