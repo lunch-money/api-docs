@@ -42,5 +42,5 @@
 
 ## Appendix
 
-* [Support currencies](appendix/support-currencies.md)
+* [Supported currencies](appendix/support-currencies.md)
 

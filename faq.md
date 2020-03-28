@@ -6,7 +6,7 @@ If you would like a specific endpoint which is not currently supported, please l
 
 ## **What currencies are supported**?
 
-Check [this gist](https://gist.github.com/lunchbag/2da4e4cfa49642fdf06716b4d13307f9) for a list of all the currencies we currently support. If a currency is missing, let us know via email and we’ll try to get it added!
+Check [here](appendix/support-currencies.md) for a list of all the currencies we currently support. If a currency is missing, let us know via email and we’ll try to get it added!
 
 ## **I’ve built something! Now what?**
 

@@ -1,6 +1,6 @@
-# Support currencies
+# Supported currencies
 
-Below is a list of currently supported currencies in Lunch Money. If your currency is missing, please let us know via email at support@lunchmoney.app and we'll work on getting it added.
+Below is a list of currently supported currencies in Lunch Money. If your currency is missing, please let us know via email at [support@lunchmoney.app](mailto:support@lunchmoney.app) and we'll work on getting it added.
 
 ```text
 aed
