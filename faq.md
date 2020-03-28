@@ -2,7 +2,7 @@
 
 ## **The endpoint I need is not listed. Can you add it?**
 
-If you would like a specific endpoint which is not currently supported, please let us know by emailing support@lunchmoney.app and stating your use case.
+If you would like a specific endpoint which is not currently supported, please let us know by emailing [support@lunchmoney.app](mailto:support@lunchmoney.app) and stating your use case.
 
 ## **What currencies are supported**?
 
@@ -10,6 +10,6 @@ Check [this gist](https://gist.github.com/lunchbag/2da4e4cfa49642fdf06716b4d1330
 
 ## **I’ve built something! Now what?**
 
-Awesome! Please share with us via email about what you built! If you are willing to share your code, we encourage you to open-source your tool/plug-in so others in the Lunch Money community can benefit.  
+Awesome! Please share with us via email about what you built! If you are willing to share your code, we encourage you to open-source your tool/plug-in so others in the Lunch Money community can benefit and we'll add it to our [Awesome Projects](awesome-projects.md) page.  
 
 
