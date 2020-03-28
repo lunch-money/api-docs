@@ -1,4 +1,10 @@
-# Example Projects
+---
+description: >-
+  This is a list of awesome projects that were created by the Lunch Money
+  community!
+---
+
+# Awesome Projects
 
 {% hint style="info" %}
 Did you create something with the Lunch Money API? Let us know and we'll add it to this list!

@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Getting Started](README.md)
-* [Example Projects](example-projects.md)
+* [Awesome Projects](awesome-projects.md)
 * [Changelog](changelog.md)
 * [FAQ](faq.md)
 
