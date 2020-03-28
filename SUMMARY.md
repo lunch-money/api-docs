@@ -40,3 +40,7 @@
 * [Plaid Accounts object](plaid-accounts/plaid-accounts-object.md)
 * [Get all Plaid accounts](plaid-accounts/get-all-plaid-accounts.md)
 
+## Appendix
+
+* [Support currencies](appendix/support-currencies.md)
+
