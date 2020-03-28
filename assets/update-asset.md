@@ -33,7 +33,7 @@ Has no effect if `balance` is not defined. If `balance` is defined, but `balance
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="currency" type="string" required=false %}
-
+Three-letter lowercase currency code must exist in our database. Defaults to asset's currency.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="institution\_name" type="string" required=false %}

@@ -16,6 +16,35 @@ Returns list of Transaction objects
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-query-parameters %}
+{% api-method-parameter name="tag\_id" type="number" required=false %}
+Filter by tag. Only accepts IDs, not names.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="recurring\_id" type="number" required=false %}
+Filter by recurring expense
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="plaid\_account\_id" type="number" required=false %}
+Filter by Plaid account
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="category\_id" type="number" required=false %}
+Filter by category. Will also match category groups.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="asset\_id" type="number" required=false %}
+Filter by asset
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="offset" type="number" required=false %}
+Sets the offset for the records returned
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="limit" type="number" required=false %}
+Sets the maximum number of records to return.  
+**Note:** the server will not respond with any indication that there are more records to be returned. Please check the response length to determine if you should make another call with an offset to fetch more transactions.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="start\_date" type="string" %}
 Denotes the beginning of the time period to fetch transactions for. Defaults to beginning of current month. Required if end\_date exists.
 {% endapi-method-parameter %}

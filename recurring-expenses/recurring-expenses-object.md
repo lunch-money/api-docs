@@ -1,4 +1,4 @@
-# Recurring Expenses Object
+# Recurring Expenses object
 
 <table>
   <thead>
@@ -160,7 +160,7 @@
       <td style="text-align:left">number</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">If any, denotes the plaid account associated with the creation of this
-        recurring expense (see <a href="https://docs.google.com/document/d/1Po1RtiuD5Chu8RMgIR0f0_NT26dQ9HJRXZ-KV4GOvJ4/edit#heading=h.mt078d5qp13c">Plaid Accounts</a>)</td>
+        recurring expense (see <a href="../plaid-accounts/plaid-accounts-object.md">Plaid Accounts</a>)</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>asset_id</b>
@@ -169,7 +169,7 @@
       <td style="text-align:left">number</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">If any, denotes the manually-managed account (i.e. asset) associated with
-        the creation of this recurring expense (see <a href="https://docs.google.com/document/d/1Po1RtiuD5Chu8RMgIR0f0_NT26dQ9HJRXZ-KV4GOvJ4/edit#heading=h.xd45exgm6amd">Assets</a>)</td>
+        the creation of this recurring expense (see <a href="../assets/assets-object.md">Assets</a>)</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>transaction_id</b>

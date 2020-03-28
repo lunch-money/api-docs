@@ -14,7 +14,7 @@ In the same vein, if a recurring expense that began last month is set to “Ever
 
 {% api-method method="get" host="https://dev.lunchmoney.app" path="/v1/recurring\_expenses" %}
 {% api-method-summary %}
-Recurring expenses
+Get recurring expenses
 {% endapi-method-summary %}
 
 {% api-method-description %}

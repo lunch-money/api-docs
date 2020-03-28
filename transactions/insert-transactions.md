@@ -178,6 +178,19 @@ An array of errors will be returned denoting reason why parameters were deemed i
       <td style="text-align:left">User-defined external ID for transaction. Max 75 characters. External
         IDs must be unique within the same asset_id.</td>
     </tr>
+    <tr>
+      <td style="text-align:left"><b>tags</b>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Array of numbers and/or strings</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p>Passing in a number will attempt to match by ID. If no matching tag ID
+          is found, an error will be thrown.</p>
+        <p>Passing in a string will attempt to match by string. If no matching tag
+          name is found, a new tag will be created.</p>
+      </td>
+    </tr>
   </tbody>
 </table>
 {% endtab %}

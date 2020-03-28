@@ -1,4 +1,4 @@
-# Categories Object
+# Categories object
 
 | **Attribute Name** |  | **Type** |  | **Description** |
 | :--- | :--- | :--- | :--- | :--- |

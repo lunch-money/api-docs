@@ -1,4 +1,4 @@
-# Transaction Object
+# Transaction object
 
 <table>
   <thead>
@@ -76,7 +76,7 @@
       <td style="text-align:left"></td>
       <td style="text-align:left">number</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Unique identifier of associated category (see Categories)</td>
+      <td style="text-align:left">Unique identifier of associated category (see <a href="../categories/categories-object.md">Categories</a>)</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>asset_id</b>
@@ -85,7 +85,7 @@
       <td style="text-align:left">number</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <p>Unique identifier of associated manually-managed account (see Assets)</p>
+        <p>Unique identifier of associated manually-managed account (see <a href="../assets/assets-object.md">Assets</a>)</p>
         <p>Note: plaid_account_id and asset_id cannot both exist for a transaction</p>
       </td>
     </tr>
@@ -96,7 +96,7 @@
       <td style="text-align:left">number</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <p>Unique identifier of associated Plaid account (see Plaid Accounts)</p>
+        <p>Unique identifier of associated Plaid account (see <a href="../plaid-accounts/plaid-accounts-object.md">Plaid Accounts</a>)</p>
         <p>Note: plaid_account_id and asset_id cannot both exist for a transaction</p>
       </td>
     </tr>
@@ -154,7 +154,8 @@
       <td style="text-align:left"></td>
       <td style="text-align:left">Tag[]</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Array of <a href="transaction-object.md#tag-object">Tag</a> objects</td>
+      <td style="text-align:left">Array of <a href="../tags/tag-object.md">Tag objects</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>external_id</b>
@@ -167,10 +168,5 @@
         External ID must be unique by asset_id. Max 75 characters.</td>
     </tr>
   </tbody>
-</table>## Tag Object
-
-| **Attribute Name** |  | **Type** |  | **Description** |
-| :--- | :--- | :--- | :--- | :--- |
-| **id** |  | number |  | Unique identifier for tag  |
-| **name** |  | string |  | User-facing name of tagGet single transaction |
+</table>
 

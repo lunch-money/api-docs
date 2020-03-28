@@ -1,4 +1,4 @@
-# Plaid Accounts Object
+# Plaid Accounts object
 
 <table>
   <thead>

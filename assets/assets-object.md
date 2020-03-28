@@ -1,4 +1,4 @@
-# Assets Object
+# Assets object
 
 <table>
   <thead>
