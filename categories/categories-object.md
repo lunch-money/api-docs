@@ -2,10 +2,10 @@
 
 | **Attribute Name** |  | **Type** |  | **Description** |
 | :--- | :--- | :--- | :--- | :--- |
-| **id** |  | number |  | The unique ID of the category. |
+| **id** |  | number |  | A unique identifier for the category. |
 | **name** |  | string |  | The name of the category. Must be between 1 and 40 characters. |
 | **description** |  | string |  | The description of the category. Must not exceed 140 characters. |
-| **is\_income** |  | boolean |  | If `true`, the transactions in this income will be treated as income. |
+| **is\_income** |  | boolean |  | If `true`, the transactions in this category will be treated as income. |
 | **exclude\_from\_budget** |  | boolean |  | If `true`, the transactions in this category will be excluded from the budget. |
 | **exclude\_from\_totals** |  | boolean |  | If `true`, the transactions in this category will be excluded from totals. |
 | **updated\_at** |  | string |  | The date and time of when the category was last updated (in the ISO 8601 extended format). |
