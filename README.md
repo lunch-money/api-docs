@@ -64,3 +64,7 @@ The lack of a Venmo and Plaid integration is frustrating for many of our users a
 
 Build a simple mobile app that allows quick insertion of transactions into your Lunch Money account or quick reviewing.
 
+#### Zillow integration
+
+Create an integration that automatically updates the value of a real estate property in Lunch Money.
+
