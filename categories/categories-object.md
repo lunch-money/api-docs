@@ -2,14 +2,14 @@
 
 | **Attribute Name** |  | **Type** |  | **Description** |
 | :--- | :--- | :--- | :--- | :--- |
-| **id** |  | number |  | Unique identifier for category |
-| **name** |  | string |  | Name of category. Must be between 1 and 40 characters |
-| **description** |  | string |  | Description of category. Must not exceed 140 characters |
-| **is\_income** |  | boolean |  | Whether or not transactions in this category should be treated as income |
-| **exclude\_from\_budget** |  | boolean |  | Whether or not transactions in this category should be excluded from budget |
-| **exclude\_from\_totals** |  | boolean |  | Whether or not transactions in this category should be excluded from totals |
-| **updated\_at** |  | string |  | Date/time at which category was last updated in ISO 8601 extended format |
-| **created\_at** |  | string |  | Date/time at which category was created in ISO 8601 extended format |
-| **is\_group** |  | boolean |  | If true, denotes a category group |
-| **group\_id** |  | number |  | If not null, this category is part of a category group and this value denotes the ID of top-level category  |
+| **id** |  | number |  | A unique identifier for the category. |
+| **name** |  | string |  | The name of the category. Must be between 1 and 40 characters. |
+| **description** |  | string |  | The description of the category. Must not exceed 140 characters. |
+| **is\_income** |  | boolean |  | If `true`, the transactions in this category will be treated as income. |
+| **exclude\_from\_budget** |  | boolean |  | If `true`, the transactions in this category will be excluded from the budget. |
+| **exclude\_from\_totals** |  | boolean |  | If `true`, the transactions in this category will be excluded from totals. |
+| **updated\_at** |  | string |  | The date and time of when the category was last updated (in the ISO 8601 extended format). |
+| **created\_at** |  | string |  | The date and time of when the category was created (in the ISO 8601 extended format). |
+| **is\_group** |  | boolean |  | If `true`, the category is a group that can be a parent to other categories. |
+| **group\_id** |  | number |  | The ID of a category group (or `null` if the category doesn't belong to a category group). |
 
