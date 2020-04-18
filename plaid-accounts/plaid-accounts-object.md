@@ -146,7 +146,7 @@
       <td style="text-align:left"><b>limit</b>
       </td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">string</td>
+      <td style="text-align:left">number</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Credit limit of the account. This field is set by Plaid and cannot be
         altered</td>
