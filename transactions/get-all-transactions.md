@@ -10,7 +10,9 @@ Get all transactions
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Returns list of Transaction objects
+Returns list of Transaction objects.  
+  
+If no query parameters are set, this endpoint will return transactions for the current calendar month \(see `start_date` and `end_date`\)
 {% endapi-method-description %}
 
 {% api-method-spec %}
