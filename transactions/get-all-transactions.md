@@ -48,11 +48,11 @@ Sets the maximum number of records to return.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="start\_date" type="string" %}
-Denotes the beginning of the time period to fetch transactions for. Defaults to beginning of current month. Required if end\_date exists.
+Denotes the beginning of the time period to fetch transactions for. Defaults to beginning of current month. Required if end\_date exists. Format: YYYY-MM-DD.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="end\_date" type="string" %}
-Denotes the end of the time period you'd like to get transactions for. Defaults to end of current month. Required if start\_date exists.
+Denotes the end of the time period you'd like to get transactions for. Defaults to end of current month. Required if start\_date exists. Format: YYYY-MM-DD.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="debit\_as\_negative" type="boolean" %}
