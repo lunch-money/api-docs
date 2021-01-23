@@ -24,7 +24,7 @@ Get all categories
 
 {% endapi-method-response-example-description %}
 
-```
+```json
 {
   "categories": [
     {
