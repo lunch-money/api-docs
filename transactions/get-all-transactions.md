@@ -10,8 +10,8 @@ Get all transactions
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Returns list of Transaction objects.  
-  
+Returns list of Transaction objects.
+
 If no query parameters are set, this endpoint will return transactions for the current calendar month \(see `start_date` and `end_date`\)
 {% endapi-method-description %}
 
@@ -43,8 +43,10 @@ Sets the offset for the records returned
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="limit" type="number" required=false %}
-Sets the maximum number of records to return.  
+Sets the maximum number of records to return.
+
 **Note:** the server will not respond with any indication that there are more records to be returned. Please check the response length to determine if you should make another call with an offset to fetch more transactions.
+
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="start\_date" type="string" %}
@@ -67,38 +69,45 @@ Pass in true if you’d like expenses to be returned as negative amounts and cre
 Returns a list of transactions.
 {% endapi-method-response-example-description %}
 
-```text
-{ transactions:
-   [ { id: 602,
-       date: '2020-01-01',
-       payee: 'Starbucks',
-       amount: '4.5000',
-       currency: 'cad',
-       notes: 'Frappuccino',
-       category_id: null,
-       recurring_id: null,
-       asset_id: null,
-       plaid_account_id: null,
-       status: 'cleared',
-       is_group: false,
-       group_id: null,
-       parent_id: null,
-       external_id: null },
-     { id: 603,
-       date: '2020-01-02',
-       payee: 'Walmart',
-       amount: '20.9100',
-       currency: 'usd',
-       notes: null,
-       category_id: null,
-       recurring_id: null,
-       asset_id: 153,
-       plaid_account_id: null,
-       status: 'uncleared',
-       is_group: false,
-       group_id: null,
-       parent_id: null,
-       external_id: 'jf2r3t98o943' } ] }
+```json
+{
+  "transactions": [
+    {
+      "id": 602,
+      "date": "2020-01-01",
+      "payee": "Starbucks",
+      "amount": "4.5000",
+      "currency": "cad",
+      "notes": "Frappuccino",
+      "category_id": null,
+      "recurring_id": null,
+      "asset_id": null,
+      "plaid_account_id": null,
+      "status": "cleared",
+      "is_group": false,
+      "group_id": null,
+      "parent_id": null,
+      "external_id": null
+    },
+    {
+      "id": 603,
+      "date": "2020-01-02",
+      "payee": "Walmart",
+      "amount": "20.9100",
+      "currency": "usd",
+      "notes": null,
+      "category_id": null,
+      "recurring_id": null,
+      "asset_id": 153,
+      "plaid_account_id": null,
+      "status": "uncleared",
+      "is_group": false,
+      "group_id": null,
+      "parent_id": null,
+      "external_id": "jf2r3t98o943"
+    }
+  ]
+}
 ```
 {% endapi-method-response-example %}
 
@@ -107,11 +116,20 @@ Returns a list of transactions.
 Errors will be returned in parameters are invalid.
 {% endapi-method-response-example-description %}
 
-```text
-{ error: 'Both start_date and end_date must be specified.' }
-{ error: 'Invalid start_date. Must be in format YYYY-MM-DD' }
-{ error: 'Invalid end_date. Must be in format YYYY-MM-DD' }
-{ error: 'end_date cannot be same or before start_date' }
+```json
+{ "error": "Both start_date and end_date must be specified." }
+```
+
+```json
+{ "error": "Invalid start_date. Must be in format YYYY-MM-DD" }
+```
+
+```json
+{ "error": "Invalid end_date. Must be in format YYYY-MM-DD" }
+```
+
+```json
+{ "error": "end_date cannot be same or before start_date" }
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
