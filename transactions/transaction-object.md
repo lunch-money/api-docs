@@ -56,7 +56,7 @@
       <td style="text-align:left"></td>
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Three-letter lowercase currency code of the transaction</td>
+      <td style="text-align:left">Three-letter lowercase currency code of the transaction in ISO 4217 format</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>notes</b>

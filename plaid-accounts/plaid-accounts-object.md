@@ -130,7 +130,7 @@
       <td style="text-align:left"></td>
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Currency of account balance. This field is set by Plaid and cannot be
+      <td style="text-align:left">Currency of account balance in ISO 4217 format. This field is set by Plaid and cannot be
         altered</td>
     </tr>
     <tr>

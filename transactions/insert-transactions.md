@@ -127,7 +127,7 @@ An array of errors will be returned denoting reason why parameters were deemed i
       <td style="text-align:left"></td>
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Three-letter lowercase currency code must exist in our database. Defaults
+      <td style="text-align:left">Three-letter lowercase currency code in ISO 4217 format. The code sent must exist in our database. Defaults
         to user account&apos;s primary currency.</td>
     </tr>
     <tr>

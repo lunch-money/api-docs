@@ -91,7 +91,7 @@
       <td style="text-align:left"></td>
       <td style="text-align:left">string</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Three-letter lowercase currency code for the recurring expense</td>
+      <td style="text-align:left">Three-letter lowercase currency code for the recurring expense in ISO 4217 format</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b>
