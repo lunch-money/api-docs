@@ -18,7 +18,7 @@ Get all tags
 
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 [
     {
         "id": 1807,
@@ -32,8 +32,8 @@ Get all tags
     }
 ]
 ```
-
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+

@@ -28,7 +28,7 @@ Pass in true if you’d like expenses to be returned as negative amounts and cre
 
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 {
     "id": 31,
     "date": "2019-02-04",
@@ -48,7 +48,6 @@ Pass in true if you’d like expenses to be returned as negative amounts and cre
     "external_id": null
 }
 ```
-
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=400 %}
@@ -56,7 +55,7 @@ Pass in true if you’d like expenses to be returned as negative amounts and cre
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 { "error": "Transaction ID not found." }
 ```
 {% endapi-method-response-example %}

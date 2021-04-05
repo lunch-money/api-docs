@@ -40,7 +40,7 @@ Pass in true if you’d like expenses to be returned as negative amounts and cre
 Returns a list of Recurring Expense objects
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 {
   "recurring_expenses": [
     {
@@ -107,7 +107,7 @@ Returns a list of Recurring Expense objects
 
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 { "error": "Invalid start_date. Must be in format YYYY-MM-DD" }
 ```
 {% endapi-method-response-example %}

@@ -148,8 +148,9 @@
       <td style="text-align:left"></td>
       <td style="text-align:left">number</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Optional credit limit of the account. This field is set by Plaid and cannot be
-        altered</td>
+      <td style="text-align:left">Optional credit limit of the account. This field is set by Plaid and cannot
+        be altered</td>
     </tr>
   </tbody>
 </table>
+

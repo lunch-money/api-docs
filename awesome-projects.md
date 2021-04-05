@@ -14,7 +14,7 @@ description: >-
 | Sync your Delta cryptocurrency portfolio balance to Lunch Money | [@markjongkind](https://twitter.com/markjongkind) | [Link](https://github.com/markjongkind/delta-to-lunchmoney) |
 | Lunch Money React Native app \(WIP\) | [@yuanhaochiang](https://twitter.com/yuanhaochiang) | [Link](https://github.com/yuanworks/bento-money) |
 | Match Amazon transactions and set transaction notes in Lunch Money | [@samwelnella](https://github.com/samwelnella) | [Link](https://github.com/samwelnella/amazon-transactions-to-lunchmoney) |
-| Go API Client | [@icco](https://twitter.com/icco) | [Link](https://github.com/icco/lunchmoney)
+| Go API Client | [@icco](https://twitter.com/icco) | [Link](https://github.com/icco/lunchmoney) |
 
 {% hint style="info" %}
 Did you create something with the Lunch Money API? Let us know and we'll add it to this list!

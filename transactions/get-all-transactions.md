@@ -10,9 +10,7 @@ Get all transactions
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Returns list of Transaction objects.
-
-If no query parameters are set, this endpoint will return transactions for the current calendar month \(see `start_date` and `end_date`\)
+Returns list of Transaction objects.If no query parameters are set, this endpoint will return transactions for the current calendar month \(see `start_date` and `end_date`\)
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -43,10 +41,7 @@ Sets the offset for the records returned
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="limit" type="number" required=false %}
-Sets the maximum number of records to return.
-
-**Note:** the server will not respond with any indication that there are more records to be returned. Please check the response length to determine if you should make another call with an offset to fetch more transactions.
-
+Sets the maximum number of records to return.**Note:** the server will not respond with any indication that there are more records to be returned. Please check the response length to determine if you should make another call with an offset to fetch more transactions.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="start\_date" type="string" %}
@@ -69,7 +64,7 @@ Pass in true if you’d like expenses to be returned as negative amounts and cre
 Returns a list of transactions.
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 {
   "transactions": [
     {
@@ -116,20 +111,8 @@ Returns a list of transactions.
 Errors will be returned in parameters are invalid.
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 { "error": "Both start_date and end_date must be specified." }
-```
-
-```json
-{ "error": "Invalid start_date. Must be in format YYYY-MM-DD" }
-```
-
-```json
-{ "error": "Invalid end_date. Must be in format YYYY-MM-DD" }
-```
-
-```json
-{ "error": "end_date cannot be same or before start_date" }
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}

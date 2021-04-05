@@ -26,7 +26,7 @@ Plaid Accounts are individual bank accounts that you have linked to Lunch Money 
 
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 {
   "plaid_accounts": [
     {

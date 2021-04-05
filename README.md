@@ -7,6 +7,10 @@ description: >-
 
 # Getting Started
 
+## ⚠️ The API docs have moved!
+
+These docs will no longer be updated and this page will soon redirect to https://lunchmoney.dev
+
 ## Current Status
 
 The developer API is officially in open public beta. During this time, please continue to heed caution and use this API at your own risk as any and all changes are irreversible.

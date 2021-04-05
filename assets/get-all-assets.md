@@ -24,7 +24,7 @@ description: >-
 
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 {
   "assets": [
     {
@@ -78,7 +78,6 @@ description: >-
   ]
 }
 ```
-
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
