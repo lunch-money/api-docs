@@ -9,7 +9,9 @@ description: >-
 
 ## ⚠️ The API docs have moved!
 
-These docs will no longer be updated and this page will soon redirect to https://lunchmoney.dev
+{% hint style="danger" %}
+These docs will no longer be updated and this page will soon redirect to [https://lunchmoney.dev](https://lunchmoney.dev)
+{% endhint %}
 
 ## Current Status
 
